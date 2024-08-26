@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Meme Generator</h1>
+    <div class="meme-container">
+        <div id="meme-image-container">
+            <img id="meme-image" src="" alt="Meme">
+            <div id="top-text" class="meme-text"></div>
+            <div id="bottom-text" class="meme-text"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <input type="file" id="image-upload" accept="image/*">
+        <input type="text" id="top-text-input" placeholder="Top Text">
+        <input type="text" id="bottom-text-input" placeholder="Bottom Text">
+        <button id="generate-meme">Generate Meme</button>
+        <button id="download-meme">Download Meme</button>
+    </div>
+</div>
+<script src="app.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html>
